@@ -316,25 +316,6 @@ ol.passi li::before {
 }
 .alterna h3 { margin: 0 0 8px; font-size: 22px; }
 .alterna p { margin: 0; color: var(--testo-tenue); }
-/* Le buste stanno su una riga tutta loro, non nella colonna delle altre
-   stampe: divise in due dentro quella colonna verrebbero larghe la meta' di
-   ogni altra figura della pagina, e la busta paga e' la stampa per cui
-   esiste il programma. */
-.doppia { margin: 42px 0; }
-.doppia .testo { margin-bottom: 22px; }
-.doppia .testo h3 { margin: 0 0 8px; font-size: 22px; }
-.doppia .testo p { margin: 0; color: var(--testo-tenue); }
-.doppia .facciate {
-  display: grid; gap: 26px; max-width: 920px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-.doppia .facciate figure { margin: 0; text-align: center; }
-.doppia .facciate img {
-  border-radius: 10px; border: 1px solid var(--bordo);
-  box-shadow: var(--ombra-alta); background: #fff;
-}
-.doppia figcaption { font-size: 13.5px; color: var(--testo-tenue);
-                     margin-top: 8px; }
 @media (max-width: 820px) {
   .alterna, .alterna.destra { grid-template-columns: 1fr; }
   .alterna.destra .figura { order: 0; }
